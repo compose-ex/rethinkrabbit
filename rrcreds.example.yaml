@@ -1,0 +1,2 @@
+postgresurl: postgres://[user]:[pass]@host:port/database
+rabbitmqurl: amqps://[user]:[pass]@host:port/vhost
