@@ -1,2 +1,4 @@
-postgresurl: postgres://[user]:[pass]@host:port/database
+rethinkdbaddress: host:port
+rethinkdbdatabase: dbname
+rethinkdbauthkey: authkey
 rabbitmqurl: amqps://[user]:[pass]@host:port/vhost
