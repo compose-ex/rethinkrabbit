@@ -6,15 +6,8 @@ import (
 	"log"
 
 	r "github.com/dancannon/gorethink"
-	"github.com/lib/pq"
 	"github.com/streadway/amqp"
 )
-
-func errorReporter(ev pq.ListenerEventType, err error) {
-	if err != nil {
-		log.Print(err)
-	}
-}
 
 func run(config Config) {
 	session, err := r.Connect(r.ConnectOpts{
@@ -76,5 +69,4 @@ func run(config Config) {
 			rabbitchannel <- jsonbytes
 		}
 	}
-
 }

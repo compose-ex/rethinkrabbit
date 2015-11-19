@@ -26,4 +26,5 @@ func setup(config Config) {
 
 	r.DB(config.RethinkDBDatabase).TableCreate("urls").Run(conn)
 
+	conn.Close()
 }
